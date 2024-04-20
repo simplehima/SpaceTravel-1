@@ -17,7 +17,7 @@ public class UIManagment : MonoBehaviour
         
     }
 
-    [System.Obsolete]
+
     public void OnClickStart()
     {
         Application.LoadLevel("Level1");
