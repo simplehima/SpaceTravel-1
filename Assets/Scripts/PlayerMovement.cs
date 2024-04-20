@@ -70,18 +70,21 @@ public class PlayerMovement : MonoBehaviour
             //}
     }
 
-    [System.Obsolete]
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Atrd")
+        if (collision.tag == "Atrd" || collision.tag == "border")
         {
             //Audio_SFX.Play();
             //score++;
             Destroy(collision.gameObject);
             Application.LoadLevel("GameOver");
 
-        }
+
+        }        
+
     }
+
+
 
 
 

@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public TMP_Text score_text;
     public int score;
-    //public AudioSource Audio_SFX;
+    public AudioSource Audio_SFX;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +19,19 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         score_text.text = score.ToString();
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Atrd")
         {
-            //Audio_SFX.Play();
+            Audio_SFX.Play();
             score++;
+            Destroy(collision.gameObject);
+
+        }
+        if (collision.tag == "Player")
+        {
             Destroy(collision.gameObject);
 
         }
