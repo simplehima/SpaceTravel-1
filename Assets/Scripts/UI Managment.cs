@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManagment : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class UIManagment : MonoBehaviour
 
     public void OnClickStart()
     {
-        Application.LoadLevel("Level1");
+        SceneManager.LoadScene("Level1");
+
 
     }
     public void OnClickQuit()

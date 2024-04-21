@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
         if (score == 60)
         {
 
-            Application.LoadLevel("Level2");
+            SceneManager.LoadScene("Level2");
         }
     }
 
