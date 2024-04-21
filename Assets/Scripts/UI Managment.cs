@@ -25,6 +25,13 @@ public class UIManagment : MonoBehaviour
 
 
     }
+
+    public void OnClick2Start()
+    {
+        SceneManager.LoadScene("Level2");
+
+
+    }
     public void OnClickQuit()
     {
         Application.Quit();
