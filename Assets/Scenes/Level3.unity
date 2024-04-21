@@ -935,9 +935,9 @@ MonoBehaviour:
   object2: {fileID: 59071930}
   speed: 5
   rotationSpeed: 45
-  shakeMagnitude: 0.1
-  shakeSpeed: 20
-  fadeSpeed: 20
+  shakeMagnitude: 0.5
+  shakeSpeed: 5
+  fadeSpeed: 5
   continueText: {fileID: 1518624751}
   fadeImage: {fileID: 1289350228}
 --- !u!1 &2036333780
