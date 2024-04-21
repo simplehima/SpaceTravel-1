@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Shoot : MonoBehaviour
 {
     public Transform shootingPoint;
+    public AudioSource Audio_SFX;
     public GameObject bulletPrefab;
 
     // Update is called once per frame
@@ -13,7 +14,9 @@ public class Shoot : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            Audio_SFX.Play();
             Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+
         }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Atrd
   - border
+  - Enemy
   layers:
   - Default
   - TransparentFX
