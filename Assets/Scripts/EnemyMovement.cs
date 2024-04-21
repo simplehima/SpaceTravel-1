@@ -21,6 +21,12 @@ public class EnemyMovement : MonoBehaviour
     {
         score_text.text = score.ToString();
         ScoreValue = score;
+
+        if (score == 60)
+        {
+
+            Application.LoadLevel("Level2");
+        }
     }
 
 

@@ -6,8 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //public SpriteRenderer spr;
-    //public Animator anim;
+    
 
     void Start()
     {
@@ -25,8 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
 
             transform.Translate(Vector2.right * 6 * Time.deltaTime);
-            //spr.flipX = true;
-            //anim.SetBool("run", true);
+
 
         }
 
@@ -35,8 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
 
             transform.Translate(Vector2.left * 6 * Time.deltaTime);
-            //spr.flipX = false;
-            //anim.SetBool("run", true);
+
 
 
         }        
@@ -45,8 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
 
             transform.Translate(Vector2.up * 6 * Time.deltaTime);
-            //spr.flipX = true;
-            //anim.SetBool("run", true);
+
 
         }
 
@@ -55,27 +51,18 @@ public class PlayerMovement : MonoBehaviour
 
 
             transform.Translate(Vector2.down * 6 * Time.deltaTime);
-            //spr.flipX = false;
-            //anim.SetBool("run", true);
+    
 
 
         }
 
-            //if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
-            //{
-
-            //    anim.SetBool("run", false);
-
-
-            //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Atrd" || collision.tag == "border")
         {
-            //Audio_SFX.Play();
-            //score++;
+            
             Destroy(collision.gameObject);
             Application.LoadLevel("GameOver");
 
